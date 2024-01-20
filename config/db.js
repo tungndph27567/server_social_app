@@ -2,7 +2,9 @@ const mongoose = require("mongoose");
 
 async function connection() {
   try {
-    await mongoose.connect("mongodb://127.0.0.1/ToDoApp");
+    await mongoose.connect(
+      "mongodb+srv://ductung:ductung@cluster0.nfwkdlr.mongodb.net/socialApp"
+    );
     console.log("Connect Successfully");
   } catch (error) {
     console.log("Connect Failure");
