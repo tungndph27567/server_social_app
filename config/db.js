@@ -5,7 +5,7 @@ async function connection() {
     await mongoose.connect(
       "mongodb+srv://ductung:ductung@cluster0.nfwkdlr.mongodb.net/socialApp"
     );
-    console.log("Connect Successfully");
+    console.log("Connect Success");
   } catch (error) {
     console.log("Connect Failure");
   }
